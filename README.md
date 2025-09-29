@@ -16,26 +16,19 @@ ExtentReports: Detailed HTML test reporting
 
 Cross-Platform: Supports Windows, Linux, and macOS
 
-###📁 Project Structure
-text
-sentinel/
-├── src/
-│   ├── main/java/com/sentinel/
-│   │   ├── api/GoRestClient.java          # API client for GoREST
-│   │   ├── ui/pages/ContactsPage.java     # Page Object for contacts
-│   │   └── utils/                         # Utilities (Config, WebDriverFactory)
-│   └── test/java/com/sentinel/tests/
-│       ├── api/UserApiTests.java          # API test cases
-│       ├── ui/                            # UI test cases
-│       └── bdd/DataValidationSteps.java   # Cucumber step definitions
-├── src/test/resources/
-│   ├── features/DataValidation.feature    # BDD feature files
-│   └── extent-config.xml                  # ExtentReports configuration
-├── .github/workflows/
-│   └── ci-pipeline.yml                    # GitHub Actions CI configuration
-└── pom.xml                               # Maven configuration
-🛠️ Prerequisites
-JDK 17 or later
+src/
+├── main/java/com/sentinel/
+│   ├── api/GoRestClient.java
+│   ├── ui/pages/ContactsPage.java
+│   └── utils/
+│       ├── Config.java
+│       └── WebDriverFactory.java
+└── test/java/com/sentinel/tests/
+    ├── api/UserApiTests.java
+    ├── ui/
+    │   ├── TestDynamicTableInteraction.java
+    │   └── TestFileUpload.java
+    └── bdd/DataValidationSteps.java
 
 Maven 3.8 or later
 
