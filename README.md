@@ -3,7 +3,7 @@
 
 A comprehensive automation testing framework that validates data integrity across REST APIs and web interfaces using Selenium WebDriver, REST Assured, and Cucumber BDD.
 
-🚀 Features
+###🚀 Features
 REST API Testing: Automated tests for GoREST API using REST Assured
 
 Web UI Testing: Selenium WebDriver tests for AdminLTE demo application
@@ -16,7 +16,7 @@ ExtentReports: Detailed HTML test reporting
 
 Cross-Platform: Supports Windows, Linux, and macOS
 
-📁 Project Structure
+###📁 Project Structure
 text
 sentinel/
 ├── src/
@@ -94,10 +94,10 @@ The framework uses headless Chrome by default. To run tests in headed mode, modi
 java
 // Remove headless option for visible browser
 // options.addArguments("--headless=new");
-📊 Test Reports
+###📊 Test Reports
 After test execution, ExtentReports generates detailed HTML reports in the test-output/ directory. Open ExtentReport.html to view test results.
 
-🔄 CI/CD Pipeline
+###🔄 CI/CD Pipeline
 The GitHub Actions workflow (ci-pipeline.yml) automatically:
 
 Runs on pushes to the main branch
@@ -115,7 +115,7 @@ Click New repository secret
 
 Add GOREST_TOKEN with your actual GoREST API token
 
-🧪 Test Types
+###🧪 Test Types
 API Tests (UserApiTests.java)
 User creation, reading, updating, and deletion (CRUD)
 
@@ -137,7 +137,7 @@ API-to-UI data synchronization
 
 Cross-platform data consistency checks
 
-🛡️ Security Notes
+###🛡️ Security Notes
 ✅ Never commit real API tokens to version control
 
 ✅ Use environment variables or GitHub Secrets
