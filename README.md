@@ -1,9 +1,5 @@
-Sentinel — Full-Stack Data Integrity Framework
-https://img.shields.io/badge/Java-17-red
-https://img.shields.io/badge/Maven-3.8+-blue
-https://img.shields.io/badge/Selenium-4.14.0-green
-https://img.shields.io/badge/TestNG-7.8.0-orange
-https://img.shields.io/badge/GitHub_Actions-CI_CD-yellow
+## Sentinel — Full-Stack Data Integrity Framework
+
 
 A comprehensive automation testing framework that validates data integrity across REST APIs and web interfaces using Selenium WebDriver, REST Assured, and Cucumber BDD.
 
