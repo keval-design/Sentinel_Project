@@ -1,140 +1,118 @@
-## Sentinel — Full-Stack Data Integrity Framework
+🚀 Sentinel – Full-Stack Testing Framework
+📌 Overview
 
+Sentinel is a comprehensive software testing project designed to evaluate functionality, performance, usability, and data integrity for a SaaS dashboard.
+Alongside this, API testing was also conducted on external APIs to ensure end-to-end reliability and robustness of both frontend and backend systems.
 
-A comprehensive automation testing framework that validates data integrity across REST APIs and web interfaces using Selenium WebDriver, REST Assured, and Cucumber BDD.
+This project demonstrates manual + automation testing skills, focusing on QA deliverables and professional testing practices.
 
-#🚀 Features
-REST API Testing: Automated tests for GoREST API using REST Assured
+🔑 Features
 
-Web UI Testing: Selenium WebDriver tests for AdminLTE demo application
+✅ Functional Testing – Verified all core features/modules of the dashboard.
 
-BDD Support: Cucumber integration for behavior-driven development
+✅ UI/UX & Usability Testing – Evaluated user experience with improvement suggestions.
 
-CI/CD Pipeline: GitHub Actions workflow for continuous integration
+✅ API Testing – Performed with Postman & RestAssured (Java), validating REST API endpoints.
 
-ExtentReports: Detailed HTML test reporting
+✅ Automation Testing – Implemented test automation using Selenium / Cypress (if applied).
 
-Cross-Platform: Supports Windows, Linux, and macOS
+✅ Defect Management – Logged defects with severity levels, screenshots, and reports.
 
-src/
-├── main/java/com/sentinel/
-│   ├── api/GoRestClient.java
-│   ├── ui/pages/ContactsPage.java
-│   └── utils/
-│       ├── Config.java
-│       └── WebDriverFactory.java
-└── test/java/com/sentinel/tests/
-    ├── api/UserApiTests.java
-    ├── ui/
-    │   ├── TestDynamicTableInteraction.java
-    │   └── TestFileUpload.java
-    └── bdd/DataValidationSteps.java
+✅ Agile & Test Planning – Followed structured Test Plan, Test Cases, RTM, and Execution Reports.
 
-Maven 3.8 or later
+🧩 Project Modules
 
-Chrome Browser (for UI tests)
+🔹 Authentication (Login/Signup)
 
-GoREST API Token
+🔹 Dashboard & Data Visualization
 
-⚙️ Setup Instructions
-1. Clone the Repository
-bash
-git clone <repository-url>
+🔹 User Management
+
+🔹 API Endpoints (CRUD operations, validation, error handling)
+
+🔹 Performance & Usability
+
+📂 Deliverables
+
+📑 Usability Suggestions
+
+🗂 Module Breakdown & Mind Map
+
+📘 Test Plan
+
+🧾 Detailed Test Cases (Manual + Automation)
+
+📊 Execution Reports
+
+🐞 Defect Logs (with severity & screenshots)
+
+🔌 API Test Reports (Postman/RestAssured)
+
+🛠 Tech Stack
+
+Manual Testing → Test Cases, RTM, Bug Reports
+
+Automation Tools → Selenium, Cypress
+
+API Testing → Postman, RestAssured
+
+Test Management → JIRA, Excel/Sheets
+
+Frameworks → TestNG, Mocha, Cucumber (if applied)
+
+📸 Screenshots & Reports
+
+Add screenshots of test cases, execution reports, or API results here.
+
+🚦 How to Run
+Manual Testing
+
+Clone/download this repo.
+
+Open the TestCases and DefectLogs folders.
+
+Review Excel/Docs for step-by-step execution.
+
+Automation (if included)
+# Clone the repository
+git clone https://github.com/your-username/sentinel.git
+
+# Navigate into the project
 cd sentinel
-2. Set Environment Variables
-Set your GoREST API token as an environment variable:
 
-Linux/macOS:
-
-bash
-export GOREST_TOKEN="your_gorest_token_here"
-Windows (PowerShell):
-
-powershell
-$env:GOREST_TOKEN="your_gorest_token_here"
-Windows (Command Prompt):
-
-cmd
-set GOREST_TOKEN=your_gorest_token_here
-3. Run Tests
-Run all tests:
-
-bash
+# Run test cases (example for Maven + TestNG)
 mvn test
-Run only API tests:
 
-bash
-mvn test -Dtest=UserApiTests
-Run only UI tests:
+API Testing
 
-bash
-mvn test -Dtest=TestDynamicTableInteraction,TestFileUpload
-Run Cucumber BDD tests:
+Import the Sentinel_API_Collection.json file in Postman.
 
-bash
-mvn test -Dtest=DataValidationSteps
-🔧 Configuration
-Environment Variables
-GOREST_TOKEN: Your GoREST API authentication token
+Run requests and validate responses.
 
-GOREST_BASE: GoREST API base URL (default: https://gorest.co.in/public/v2)
+📌 API Testing Example
+GET Users
 
-ADMINLTE_BASE: AdminLTE demo application URL (default: https://adminlte.io/themes/v3)
+Endpoint: /users
 
-Browser Configuration
-The framework uses headless Chrome by default. To run tests in headed mode, modify WebDriverFactory.java:
+✅ Status Code: 200
 
-java
-// Remove headless option for visible browser
-// options.addArguments("--headless=new");
-#📊 Test Reports
-After test execution, ExtentReports generates detailed HTML reports in the test-output/ directory. Open ExtentReport.html to view test results.
+✅ Response Time: < 500ms
 
-#🔄 CI/CD Pipeline
-The GitHub Actions workflow (ci-pipeline.yml) automatically:
+✅ Schema Validation: Passed
 
-Runs on pushes to the main branch
+POST User
 
-Sets up JDK 17 and Maven caching
+Endpoint: /users
 
-Executes all tests with the GoREST token from repository secrets
+✅ Status Code: 201
 
-Generates test reports
+✅ Validated request body & response mapping
 
-Setting up GitHub Secrets
-Go to your repository Settings → Secrets and variables → Actions
+🧑‍💻 Author
 
-Click New repository secret
+👤 Keval Rathod
 
-Add GOREST_TOKEN with your actual GoREST API token
+🚀 Aspiring Software Test Engineer
 
-#🧪 Test Types
-API Tests (UserApiTests.java)
-User creation, reading, updating, and deletion (CRUD)
-
-JSON request/response validation
-
-HTTP status code verification
-
-UI Tests
-Dynamic Table Interaction: Search and validate table data
-
-File Upload: Test file upload functionality
-
-Contacts Page: Data validation in AdminLTE contacts table
-
-BDD Tests (DataValidation.feature)
-End-to-end data integrity validation
-
-API-to-UI data synchronization
-
-Cross-platform data consistency checks
-
-#🛡️ Security Notes
-✅ Never commit real API tokens to version control
-
-✅ Use environment variables or GitHub Secrets
-
-✅ The .gitignore file excludes sensitive configuration
-
-✅ All external dependencies use secure HTTPS
+🔗 LinkedIn
+ | GitHub
