@@ -18,18 +18,6 @@ It includes **manual testing, automation testing, and API testing** to showcase 
 
 ---
 
-## 📂 Project Structure  
-
-│── 📑 README.md # Project documentation
-│── 📘 TestPlan/ # Test plan & strategy documents
-│── 🧾 TestCases/ # Detailed manual & automation test cases
-│── 🐞 DefectLogs/ # Bugs with severity, screenshots
-│── 📊 Reports/ # Test execution & API reports
-│── 🔌 API-Testing/ # Postman collections & RestAssured scripts
-│── 🤖 Automation/ # Selenium/Cypress test scripts
-
-
-
 ---
 
 ## 🧩 Modules Tested  
