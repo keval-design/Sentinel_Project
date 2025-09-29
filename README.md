@@ -1,118 +1,93 @@
-🚀 Sentinel – Full-Stack Testing Framework
-📌 Overview
+# 🛡️ Sentinel – Software Testing Project  
 
-Sentinel is a comprehensive software testing project designed to evaluate functionality, performance, usability, and data integrity for a SaaS dashboard.
-Alongside this, API testing was also conducted on external APIs to ensure end-to-end reliability and robustness of both frontend and backend systems.
+## 📌 Project Overview  
+**Sentinel** is a complete software testing project focused on ensuring **data integrity, functionality, usability, and API reliability** of a SaaS-based dashboard.  
+It includes **manual testing, automation testing, and API testing** to showcase end-to-end QA practices.  
 
-This project demonstrates manual + automation testing skills, focusing on QA deliverables and professional testing practices.
+---
 
-🔑 Features
+## ✨ Features  
 
-✅ Functional Testing – Verified all core features/modules of the dashboard.
+- ✅ Functional Testing (UI & core modules)  
+- ✅ Usability & UX Testing (improvement suggestions)  
+- ✅ API Testing (Postman & RestAssured)  
+- ✅ Automation Testing (Selenium / Cypress)  
+- ✅ Test Documentation (Test Plan, Test Cases, RTM)  
+- ✅ Defect Management (logs with severity & screenshots)  
+- ✅ Agile Process (test coverage, reports, execution logs)  
 
-✅ UI/UX & Usability Testing – Evaluated user experience with improvement suggestions.
+---
 
-✅ API Testing – Performed with Postman & RestAssured (Java), validating REST API endpoints.
+## 📂 Project Structure  
 
-✅ Automation Testing – Implemented test automation using Selenium / Cypress (if applied).
+│── 📑 README.md # Project documentation
+│── 📘 TestPlan/ # Test plan & strategy documents
+│── 🧾 TestCases/ # Detailed manual & automation test cases
+│── 🐞 DefectLogs/ # Bugs with severity, screenshots
+│── 📊 Reports/ # Test execution & API reports
+│── 🔌 API-Testing/ # Postman collections & RestAssured scripts
+│── 🤖 Automation/ # Selenium/Cypress test scripts
 
-✅ Defect Management – Logged defects with severity levels, screenshots, and reports.
 
-✅ Agile & Test Planning – Followed structured Test Plan, Test Cases, RTM, and Execution Reports.
 
-🧩 Project Modules
+---
 
-🔹 Authentication (Login/Signup)
+## 🧩 Modules Tested  
 
-🔹 Dashboard & Data Visualization
+- 🔹 **Authentication** → Login, Signup, Logout  
+- 🔹 **Dashboard** → Data visualization & widgets  
+- 🔹 **User Management** → CRUD operations  
+- 🔹 **API Endpoints** → GET, POST, PUT, DELETE validation  
+- 🔹 **Performance & Usability**  
 
-🔹 User Management
+---
 
-🔹 API Endpoints (CRUD operations, validation, error handling)
+## 🚀 API Testing  
 
-🔹 Performance & Usability
+Performed with **Postman** and **RestAssured**.  
 
-📂 Deliverables
+**Examples:**  
 
-📑 Usability Suggestions
+- **GET Users**  
+  - Endpoint: `/users`  
+  - Status Code: `200 OK`  
+  - Response Time: `< 500ms`  
+  - Schema validation ✅  
 
-🗂 Module Breakdown & Mind Map
+- **POST User**  
+  - Endpoint: `/users`  
+  - Status Code: `201 Created`  
+  - Request/Response validation ✅  
 
-📘 Test Plan
+---
 
-🧾 Detailed Test Cases (Manual + Automation)
+## 🛠 Tech Stack  
 
-📊 Execution Reports
+- **Manual Testing** → Excel/Docs for Test Plan, RTM, Defect Logs  
+- **Automation** → Selenium / Cypress, TestNG, Mocha  
+- **API Testing** → Postman, RestAssured  
+- **Test Management** → JIRA, Agile boards  
 
-🐞 Defect Logs (with severity & screenshots)
+---
 
-🔌 API Test Reports (Postman/RestAssured)
+## 📸 Screenshots & Reports  
 
-🛠 Tech Stack
+_Add screenshots of test runs, API responses, and defect logs here._  
 
-Manual Testing → Test Cases, RTM, Bug Reports
+---
 
-Automation Tools → Selenium, Cypress
+## 🚦 How to Run  
 
-API Testing → Postman, RestAssured
+### 🔹 Manual Testing  
+- Open `/TestCases` and `/DefectLogs` for detailed steps & results.  
 
-Test Management → JIRA, Excel/Sheets
-
-Frameworks → TestNG, Mocha, Cucumber (if applied)
-
-📸 Screenshots & Reports
-
-Add screenshots of test cases, execution reports, or API results here.
-
-🚦 How to Run
-Manual Testing
-
-Clone/download this repo.
-
-Open the TestCases and DefectLogs folders.
-
-Review Excel/Docs for step-by-step execution.
-
-Automation (if included)
-# Clone the repository
+### 🔹 Automation (if included)  
+```bash
+# Clone repo
 git clone https://github.com/your-username/sentinel.git
 
-# Navigate into the project
-cd sentinel
+# Navigate
+cd sentinel/Automation
 
-# Run test cases (example for Maven + TestNG)
+# Run tests (Maven + TestNG example)
 mvn test
-
-API Testing
-
-Import the Sentinel_API_Collection.json file in Postman.
-
-Run requests and validate responses.
-
-📌 API Testing Example
-GET Users
-
-Endpoint: /users
-
-✅ Status Code: 200
-
-✅ Response Time: < 500ms
-
-✅ Schema Validation: Passed
-
-POST User
-
-Endpoint: /users
-
-✅ Status Code: 201
-
-✅ Validated request body & response mapping
-
-🧑‍💻 Author
-
-👤 Keval Rathod
-
-🚀 Aspiring Software Test Engineer
-
-🔗 LinkedIn
- | GitHub
